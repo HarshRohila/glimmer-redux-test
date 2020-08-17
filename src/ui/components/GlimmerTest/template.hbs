@@ -1,1 +1,8 @@
-<div><h1>Welcome to Glimmer!</h1></div>
+<button onclick={{action toggle}}>
+	Toggle
+</button>
+{{#if this.isOpen}}
+	<h1>Opened</h1>
+{{else}}
+	<h1>Closed</h1>
+{{/if}}
